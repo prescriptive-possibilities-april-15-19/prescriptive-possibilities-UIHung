@@ -4,6 +4,9 @@
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+.width-100 {
+  width: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -16,4 +19,45 @@ body {
   background-color: white;
   color: black;
   font-family: 'Roboto', sans-serif;
+}
+.fixedmenu {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #4e8098;
+  padding: 20px 10px 5px 10px;
+  background-color: #ffffff;
+}
+.fixedmenu .logo h1 {
+  font-size: 1.3rem;
+}
+.fixedmenu .selectmenu a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: navy;
+}
+.fixedmenu .selectmenu a:hover {
+  color: blue;
+}
+.fixedmenu .frontend {
+  padding-right: 50px;
+}
+.fixedmenu .frontend .button1 {
+  background-color: #092327;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+}
+.container {
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 800px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px 0 20px 0;
 }
