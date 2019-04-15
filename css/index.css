@@ -23,6 +23,7 @@ body {
 .fixedmenu {
   width: 100%;
   position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,16 +31,19 @@ body {
   padding: 20px 10px 5px 10px;
   background-color: #ffffff;
 }
+.fixedmenu .logo {
+  padding-left: 50px;
+}
 .fixedmenu .logo h1 {
   font-size: 1.3rem;
 }
 .fixedmenu .selectmenu a {
   margin-right: 30px;
   text-decoration: none;
-  color: navy;
+  color: darkgray;
 }
 .fixedmenu .selectmenu a:hover {
-  color: blue;
+  color: navy;
 }
 .fixedmenu .frontend {
   padding-right: 50px;
@@ -52,8 +56,8 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding-top: 150px;
   width: 800px;
+  padding-top: 100px;
 }
 footer {
   width: 100%;

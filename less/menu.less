@@ -1,6 +1,7 @@
 .fixedmenu {
     .width-100;
     position: fixed;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +10,7 @@
     background-color: #ffffff;
 
     .logo{
+        padding-left: 50px;
         h1{
             font-size: 1.3rem;
         }
@@ -17,11 +19,11 @@
         a {
             margin-right: 30px;
             text-decoration: none;
-            color: navy;
+            color: darkgray;
         
 
         &:hover {
-            color: blue;
+            color: navy;
             }
         }
     }
@@ -38,6 +40,6 @@
 
 .container{
     margin: 0 auto;
-    padding-top: 150px;
     width: 800px;
+    padding-top: 100px;
 }
