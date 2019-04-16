@@ -33,8 +33,13 @@ class MenuLink {
     }
   
     select() {
-      this.element.classList.toggle('belowbar-hidden');
-    }
+    const items = document.querySelectorAll('.belowbar')
+
+        // Remove the class "tabs-item-selected" from each element
+        Array.from(items).forEach(element => { return element.classList.remove('belowbar-show');})
+        // Add a class named "tabs-item-selected" to this element
+        //this.element;
+        this.element.classList.add('belowbar-show');    }
   }
 
 
