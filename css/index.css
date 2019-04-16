@@ -49,7 +49,7 @@ body {
   flex-direction: row;
   margin-right: 30px;
   text-decoration: none;
-  color: darkgray;
+  color: #747373;
 }
 .topbar .fixedmenu .menulink:hover {
   color: navy;
@@ -64,7 +64,7 @@ body {
   width: 0px;
   opacity: 0;
   overflow: hidden;
-  transition: opacity 1s;
+  transition: opacity 0.8s;
 }
 .topbar .belowbar-show {
   width: 100%;
@@ -76,12 +76,12 @@ body {
   padding: 20px 0 20px 0;
   opacity: 1;
   overflow: hidden;
-  transition: opacity 1s;
+  transition: opacity 0.8s;
 }
 .topbar .belowbar-show .belowbarlink {
   margin-right: 100px;
   text-decoration: none;
-  color: darkgray;
+  color: #747373;
 }
 .topbar .belowbar-show .belowbarlink:hover {
   color: navy;
@@ -91,6 +91,10 @@ body {
   color: white;
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
+}
+#button a {
+  color: white;
+  text-decoration: none;
 }
 .container {
   margin: 0 auto;
