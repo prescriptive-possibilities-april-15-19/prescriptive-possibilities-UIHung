@@ -61,7 +61,10 @@ body {
   justify-content: flex-end;
 }
 .topbar .belowbar {
-  display: none;
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s;
 }
 .topbar .belowbar-show {
   width: 100%;
@@ -71,6 +74,9 @@ body {
   justify-content: center;
   background-color: white;
   padding: 20px 0 20px 0;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 1s;
 }
 .topbar .belowbar-show .belowbarlink {
   margin-right: 100px;
@@ -89,7 +95,7 @@ body {
 .container {
   margin: 0 auto;
   width: 800px;
-  padding-top: 100px;
+  padding-top: 170px;
 }
 footer {
   width: 100%;

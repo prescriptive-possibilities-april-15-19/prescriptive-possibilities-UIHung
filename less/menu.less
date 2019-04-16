@@ -42,7 +42,10 @@
 }
 
 .belowbar {
-    display: none;
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 1s;
     }
 .belowbar-show {
     .width-100;
@@ -52,6 +55,9 @@
     justify-content: center;
     background-color: white;
     padding: 20px 0 20px 0;
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity 1s;
     .belowbarlink {
         margin-right: 100px;
         text-decoration: none;
@@ -76,5 +82,5 @@
 .container{
     margin: 0 auto;
     width: 800px;
-    padding-top: 100px;
+    padding-top: 170px;
 }
