@@ -20,35 +20,67 @@ body {
   color: black;
   font-family: 'Roboto', sans-serif;
 }
-.fixedmenu {
+.topbar {
   width: 100%;
   position: fixed;
   z-index: 2;
   display: flex;
+  flex-direction: column;
+}
+.topbar .fixedmenu {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #4e8098;
+  border-bottom: 2px solid #4e8098;
   padding: 20px 10px 5px 10px;
   background-color: #ffffff;
 }
-.fixedmenu .logo {
+.topbar .fixedmenu .logo {
+  display: flex;
+  flex: 1;
   padding-left: 50px;
 }
-.fixedmenu .logo h1 {
+.topbar .fixedmenu .logo h1 {
   font-size: 1.3rem;
 }
-.fixedmenu .selectmenu a {
+.topbar .fixedmenu .menulink {
+  display: flex;
+  flex-direction: row;
   margin-right: 30px;
   text-decoration: none;
   color: darkgray;
 }
-.fixedmenu .selectmenu a:hover {
+.topbar .fixedmenu .menulink:hover {
   color: navy;
 }
-.fixedmenu .frontend {
+.topbar .fixedmenu .frontend {
+  display: flex;
+  flex: 1;
   padding-right: 50px;
+  justify-content: flex-end;
 }
-.fixedmenu .frontend .button1 {
+.topbar .belowbar {
+  display: none;
+}
+.topbar .belowbar-show {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: 80px;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0 20px 0;
+}
+.topbar .belowbar-show .belowbarlink {
+  margin-right: 100px;
+  text-decoration: none;
+  color: darkgray;
+}
+.topbar .belowbar-show .belowbarlink:hover {
+  color: navy;
+}
+#button {
   background-color: #092327;
   color: white;
   border-radius: 3px;

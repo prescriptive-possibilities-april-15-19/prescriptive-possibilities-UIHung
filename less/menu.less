@@ -1,41 +1,76 @@
-.fixedmenu {
+.topbar {
     .width-100;
     position: fixed;
     z-index: 2;
     display: flex;
+    flex-direction: column;
+.fixedmenu {
+    .width-100;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid @footerbg;
+    border-bottom: 2px solid @footerbg;
     padding: 20px 10px 5px 10px;
     background-color: #ffffff;
 
     .logo{
+        display: flex;
+        flex: 1;
         padding-left: 50px;
         h1{
             font-size: 1.3rem;
         }
     }
-    .selectmenu {
-        a {
+    .menulink {
+            display: flex;
+            flex-direction: row;
             margin-right: 30px;
             text-decoration: none;
             color: darkgray;
-        
-
         &:hover {
             color: navy;
             }
         }
-    }
+    
     .frontend {
+        display: flex;
+        flex: 1;
         padding-right: 50px;
-        .button1{
+        justify-content: flex-end;
+        
+    }
+}
+
+.belowbar {
+    display: none;
+    }
+.belowbar-show {
+    .width-100;
+    display: flex;
+    position: fixed;
+    margin-top: 80px;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 0 20px 0;
+    .belowbarlink {
+        margin-right: 100px;
+        text-decoration: none;
+        color: darkgray;
+
+    &:hover {
+        color: navy;
+        }
+    }
+    
+}
+}
+
+#button{
         background-color: #092327;
         color: white;
         border-radius: 3px;
         padding: 5px 10px 5px 10px;
-        }
-    }
+
 }
 
 .container{
