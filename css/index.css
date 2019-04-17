@@ -23,7 +23,7 @@ body {
 .center {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 .topbar {
@@ -146,6 +146,12 @@ body {
   text-align: center;
   padding: 30px 0px 30px 0px;
 }
+.teamboard .containerboard .iteminfo {
+  display: none;
+}
+.teamboard .containerboard .iteminfo-show {
+  display: block;
+}
 .teamboard .containerboard .members {
   width: 30%;
   display: flex;
@@ -154,6 +160,9 @@ body {
 }
 .teamboard .containerboard .members .memname {
   margin-bottom: 8px;
+}
+.teamboard .containerboard .members .memname:hover {
+  cursor: pointer;
 }
 footer {
   width: 100%;
