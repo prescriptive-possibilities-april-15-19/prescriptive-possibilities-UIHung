@@ -9,9 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid @footerbg;
+    border-bottom: 2px solid #b1ede8;
     padding: 30px 0;
-    background-color: #ffffff;
+    background-color: #092327;
+    transition: 0.4s;
 
     .logo{
         display: flex;
@@ -19,6 +20,7 @@
         padding-left: 50px;
         h1{
             font-size: 1.3rem;
+            color: white;
         }
     }
     .menulink {
@@ -26,9 +28,9 @@
             flex-direction: row;
             margin-right: 30px;
             text-decoration: none;
-            color: rgb(116, 115, 115);
+            color: white;
         &:hover {
-            color: navy;
+            color: lightgray;
             }
         }
     
@@ -53,18 +55,18 @@
     position: fixed;
     margin-top: 115px;
     justify-content: center;
-    background-color: white;
+    background-color: #092327;
     padding: 20px 0 20px 0;
-    opacity: 1;
+    opacity: 0.8;
     overflow: hidden;
     transition: opacity .8s;
     .belowbarlink {
         margin-right: 100px;
         text-decoration: none;
-        color: rgb(116, 115, 115);
+        color: white;
 
     &:hover {
-        color: navy;
+        color:gray;
         }
     }
     
@@ -72,13 +74,13 @@
 }
 
 #button{
-        background-color: #092327;
-        color: white;
+        border: 1px solid #b1ede2;
+        background-color: darkgray;
         border-radius: 3px;
         padding: 5px 10px 5px 10px;
-        &:hover { background-color: darkgray; border: 2px solid #092327 }
+        &:hover { background-color: darkgray; border: 2px solid #b1ede2 }
         a {
-            color: white;
+            color: #092327;
             text-decoration: none;
         &:hover{color: #092327}
         }

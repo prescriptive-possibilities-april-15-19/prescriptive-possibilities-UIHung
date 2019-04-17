@@ -21,10 +21,41 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .center {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
+  display: inline-block;
+  width: 60%;
   height: auto;
+}
+.main {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  padding: 0px 20px;
+  align-items: center;
+}
+.main .sidetab {
+  background-color: #0b5351;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+  width: 30%;
+  max-height: 250px;
+  margin-right: 0;
+}
+.main .sidetab h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+}
+.main .sidetab ul {
+  padding-left: 15px;
+  line-height: 2.2;
+  list-style-type: circle;
+}
+.tab1 {
+  margin-top: 30px;
+  background-color: #4e8098;
+  border-radius: 10px;
+  padding: 20px 20px;
+  color: whitesmoke;
 }
 .topbar {
   width: 100%;
@@ -38,9 +69,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #4e8098;
+  border-bottom: 2px solid #b1ede8;
   padding: 30px 0;
-  background-color: #ffffff;
+  background-color: #092327;
+  transition: 0.4s;
 }
 .topbar .fixedmenu .logo {
   display: flex;
@@ -49,16 +81,17 @@ body {
 }
 .topbar .fixedmenu .logo h1 {
   font-size: 1.3rem;
+  color: white;
 }
 .topbar .fixedmenu .menulink {
   display: flex;
   flex-direction: row;
   margin-right: 30px;
   text-decoration: none;
-  color: #747373;
+  color: white;
 }
 .topbar .fixedmenu .menulink:hover {
-  color: navy;
+  color: lightgray;
 }
 .topbar .fixedmenu .frontend {
   display: flex;
@@ -78,32 +111,32 @@ body {
   position: fixed;
   margin-top: 115px;
   justify-content: center;
-  background-color: white;
+  background-color: #092327;
   padding: 20px 0 20px 0;
-  opacity: 1;
+  opacity: 0.8;
   overflow: hidden;
   transition: opacity 0.8s;
 }
 .topbar .belowbar-show .belowbarlink {
   margin-right: 100px;
   text-decoration: none;
-  color: #747373;
+  color: white;
 }
 .topbar .belowbar-show .belowbarlink:hover {
-  color: navy;
+  color: gray;
 }
 #button {
-  background-color: #092327;
-  color: white;
+  border: 1px solid #b1ede2;
+  background-color: darkgray;
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
 }
 #button:hover {
   background-color: darkgray;
-  border: 2px solid #092327;
+  border: 2px solid #b1ede2;
 }
 #button a {
-  color: white;
+  color: #092327;
   text-decoration: none;
 }
 #button a:hover {

@@ -1,3 +1,17 @@
+//scrolling
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".fixedmenu").style.padding = "10px 0px";
+    document.querySelector(".belowbar-show").style.marginTop = "75px";
+  } else {
+    document.querySelector(".fixedmenu").style.padding = "30px 0px";
+    document.querySelector(".belowbar-show").style.marginTop = "115px";
+
+  }
+} 
+
 class MenuLink {
     constructor(element) {
       // Assign this.element to the passed in DOM element
@@ -48,3 +62,4 @@ links = document.querySelectorAll('.menulink');
 console.log(links)
 links.forEach(element =>  { return new MenuLink(element) }
 );
+
