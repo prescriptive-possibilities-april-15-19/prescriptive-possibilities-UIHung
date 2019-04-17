@@ -39,7 +39,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #4e8098;
-  padding: 20px 10px 5px 10px;
+  padding: 30px 0;
   background-color: #ffffff;
 }
 .topbar .fixedmenu .logo {
