@@ -17,7 +17,7 @@ class MenuLink {
       //console.log(this.tabItem)
   
       // Add a click event listener on this instance, calling the select method on click
-      this.element.addEventListener('mouseover', () => this.select() );
+      this.element.addEventListener('click', () => this.select() );
     };
   
     select() {
