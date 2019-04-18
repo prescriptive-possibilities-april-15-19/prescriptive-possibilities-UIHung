@@ -12,9 +12,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #b1ede8;
+    border-bottom: 2px solid @highlighter;
     padding: 25px 0;
-    background-color: #092327;
+    background-color: @darkslate;
     transition: 0.4s;
     @media @phone{
     margin: 0 auto;
@@ -89,7 +89,7 @@
     top: 102px;
     z-index: 2;
     justify-content: center;
-    background-color: #092327;
+    background-color: @darkslate;
     padding: 20px 0 20px 0;
     opacity: 0.8;
     overflow: hidden;
@@ -102,7 +102,7 @@
         position: relative;
         top: 0;
         height: 60px; 
-        background-color: #092327
+        background-color: @darkslate;
         }
     .belowbarlink {
         margin-right: 100px;
@@ -131,9 +131,9 @@
         }
         &:hover { background-color: lightgray; border: 2px solid #b1ede2; cursor: pointer;}
         a {
-            color: #092327;
+            color: @darkslate;
             text-decoration: none;
-        &:hover{color: #092327 }
+        &:hover{color: @darkslate }
         }
 
 }
