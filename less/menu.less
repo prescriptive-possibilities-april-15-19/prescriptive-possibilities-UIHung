@@ -64,18 +64,25 @@
     .width-100;
     display: flex;
     position: fixed;
-    margin-top: 112px;
+    top: 112px;
+    z-index: 2;
     justify-content: center;
     background-color: #092327;
     padding: 20px 0 20px 0;
     opacity: 0.8;
     overflow: hidden;
     transition: opacity .8s;
+    @media @phone{
+     top: 209px;
+     justify-content: space-evenly;   
+    }
     .belowbarlink {
         margin-right: 100px;
         text-decoration: none;
         color: white;
-
+    @media @phone{
+        margin-right: 0px;
+    }
     &:hover {
         color:gray;
         }

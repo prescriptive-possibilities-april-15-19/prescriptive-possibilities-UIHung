@@ -93,7 +93,8 @@ body {
   width: 100%;
   display: flex;
   position: fixed;
-  margin-top: 112px;
+  top: 112px;
+  z-index: 2;
   justify-content: center;
   background-color: #092327;
   padding: 20px 0 20px 0;
@@ -101,10 +102,21 @@ body {
   overflow: hidden;
   transition: opacity 0.8s;
 }
+@media (max-width: 500px) {
+  .topbar .belowbar-show {
+    top: 209px;
+    justify-content: space-evenly;
+  }
+}
 .topbar .belowbar-show .belowbarlink {
   margin-right: 100px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 500px) {
+  .topbar .belowbar-show .belowbarlink {
+    margin-right: 0px;
+  }
 }
 .topbar .belowbar-show .belowbarlink:hover {
   color: gray;
