@@ -164,6 +164,11 @@ body {
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
 }
+@media (max-width: 800px) {
+  #button {
+    font-size: 1.4rem;
+  }
+}
 #button:hover {
   background-color: darkgray;
   border: 2px solid #b1ede2;
