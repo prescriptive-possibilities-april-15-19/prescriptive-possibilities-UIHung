@@ -17,7 +17,7 @@ class NameLink {
       //console.log(this.tabItem)
   
       // Add a click event listener on this instance, calling the select method on click
-      this.element.addEventListener('click', () => this.select() );
+      this.element.addEventListener('mouseover', () => this.select() );
     };
   
     select() {

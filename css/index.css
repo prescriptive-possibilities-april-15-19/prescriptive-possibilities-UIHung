@@ -17,8 +17,8 @@ body {
   font-size: 62.5%;
 }
 body {
-  background-color: white;
-  color: black;
+  background-color: #1d2f38;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #b1ede8;
-  padding: 30px 0;
+  padding: 25px 0;
   background-color: #092327;
   transition: 0.4s;
 }
@@ -62,6 +62,11 @@ body {
 @media (max-width: 500px) {
   .topbar .fixedmenu .logo {
     padding-left: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .topbar .fixedmenu .logo {
+    padding-left: 20px;
   }
 }
 .topbar .fixedmenu .logo h1 {
@@ -101,6 +106,11 @@ body {
     padding-right: 0px;
   }
 }
+@media (max-width: 800px) {
+  .topbar .fixedmenu .frontend {
+    padding-right: 20px;
+  }
+}
 .topbar .belowbar {
   width: 0px;
   height: 0px;
@@ -113,7 +123,7 @@ body {
   height: auto;
   display: flex;
   position: fixed;
-  top: 112px;
+  top: 102px;
   z-index: 2;
   justify-content: center;
   background-color: #092327;
@@ -126,8 +136,12 @@ body {
   .topbar .belowbar-show {
     justify-content: space-evenly;
     position: relative;
-    top: 0;
     height: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .topbar .belowbar-show {
+    top: 130px;
   }
 }
 .topbar .belowbar-show .belowbarlink {
@@ -175,6 +189,7 @@ body {
 }
 @media (max-width: 800px) {
   .container {
+    padding-top: 210px;
     max-width: 600px;
   }
 }
@@ -186,16 +201,24 @@ body {
 .main {
   display: flex;
   flex-direction: row nowrap;
+  background-color: black;
+  border: 1px solid #b1ede8;
   justify-content: space-around;
-  padding: 0px 20px;
+  padding: 10px 20px;
   align-items: center;
 }
 @media (max-width: 500px) {
   .main {
+    width: 95%;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
   }
+}
+.main .viewport {
+  width: 100%;
+  height: auto;
 }
 .main .sidetab {
   background-color: #0b5351;
@@ -212,6 +235,11 @@ body {
     border-radius: 15px;
   }
 }
+@media (max-width: 800px) {
+  .main .sidetab {
+    max-height: 400px;
+  }
+}
 .main .sidetab h2 {
   font-size: 2rem;
   margin-bottom: 0px;
@@ -220,6 +248,11 @@ body {
   padding-left: 15px;
   line-height: 2.2;
   list-style-type: circle;
+}
+@media (max-width: 800px) {
+  .main .sidetab ul {
+    line-height: 1.5;
+  }
 }
 .main2 {
   width: 100%;
@@ -273,6 +306,11 @@ body {
     width: 480px;
   }
 }
+@media (max-width: 800px) {
+  .teamboard {
+    width: 500px;
+  }
+}
 .teamboard h4 {
   margin-bottom: 20px;
   font-size: 2.2rem;
@@ -312,6 +350,12 @@ body {
     height: auto;
   }
 }
+@media (max-width: 800px) {
+  .teamboard .containerboard .iteminfo-show .pp {
+    width: 80%;
+    height: auto;
+  }
+}
 .teamboard .containerboard .members {
   width: 30%;
   display: flex;
@@ -328,7 +372,8 @@ body {
 footer {
   width: 100%;
   text-align: center;
-  background-color: lightgray;
+  background-color: darkgray;
+  color: black;
   padding: 20px 0 20px 0;
   margin-top: 100px;
 }
