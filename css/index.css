@@ -308,19 +308,25 @@ body {
   font-size: 1.8rem;
   border-radius: 25px;
 }
-@media (max-width: 500px) {
-  .teamboard {
-    width: 480px;
-  }
-}
 @media (max-width: 800px) {
   .teamboard {
     width: 500px;
   }
 }
+@media (max-width: 500px) {
+  .teamboard {
+    width: 465px;
+    font-size: 1.6rem;
+  }
+}
 .teamboard h4 {
   margin-bottom: 20px;
   font-size: 2.2rem;
+}
+@media (max-width: 500px) {
+  .teamboard h4 {
+    font-size: 2rem;
+  }
 }
 .teamboard h2 {
   font-size: 2rem;
@@ -340,6 +346,11 @@ body {
   width: 70%;
   text-align: center;
   padding: 30px 0px 30px 0px;
+}
+@media (max-width: 500px) {
+  .teamboard .containerboard .meminfo {
+    width: 65%;
+  }
 }
 .teamboard .containerboard .iteminfo {
   display: none;
@@ -368,6 +379,12 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 0 20px 0;
+}
+@media (max-width: 500px) {
+  .teamboard .containerboard .members {
+    width: 35%;
+    padding: 20px 5px 20px 5px;
+  }
 }
 .teamboard .containerboard .members .memname {
   margin-bottom: 8px;
