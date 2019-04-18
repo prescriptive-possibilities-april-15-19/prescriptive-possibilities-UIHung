@@ -14,48 +14,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
 }
 body {
   background-color: white;
   color: black;
   font-family: 'Roboto', sans-serif;
-}
-.center {
-  display: inline-block;
-  width: 60%;
-  height: auto;
-}
-.main {
-  display: flex;
-  flex-direction: row nowrap;
-  justify-content: center;
-  padding: 0px 20px;
-  align-items: center;
-}
-.main .sidetab {
-  background-color: #0b5351;
-  color: white;
-  border-radius: 5px;
-  padding: 20px 15px;
-  width: 30%;
-  max-height: 250px;
-  margin-right: 0;
-}
-.main .sidetab h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0px;
-}
-.main .sidetab ul {
-  padding-left: 15px;
-  line-height: 2.2;
-  list-style-type: circle;
-}
-.tab1 {
-  margin-top: 30px;
-  background-color: #4e8098;
-  border-radius: 10px;
-  padding: 20px 20px;
-  color: whitesmoke;
+  font-size: 1.6rem;
 }
 .topbar {
   width: 100%;
@@ -74,13 +39,26 @@ body {
   background-color: #092327;
   transition: 0.4s;
 }
+@media (max-width: 500px) {
+  .topbar .fixedmenu {
+    flex-direction: column;
+    justify-items: space-between;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+  }
+}
 .topbar .fixedmenu .logo {
   display: flex;
   flex: 1;
   padding-left: 50px;
 }
+@media (max-width: 500px) {
+  .topbar .fixedmenu .logo {
+    padding-left: 0px;
+  }
+}
 .topbar .fixedmenu .logo h1 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: white;
 }
 .topbar .fixedmenu .menulink {
@@ -99,6 +77,12 @@ body {
   padding-right: 50px;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  .topbar .fixedmenu .frontend {
+    margin-top: 20px;
+    padding-right: 0px;
+  }
+}
 .topbar .belowbar {
   width: 0px;
   opacity: 0;
@@ -109,7 +93,7 @@ body {
   width: 100%;
   display: flex;
   position: fixed;
-  margin-top: 115px;
+  margin-top: 112px;
   justify-content: center;
   background-color: #092327;
   padding: 20px 0 20px 0;
@@ -147,6 +131,92 @@ body {
   padding-top: 170px;
   margin: 0px auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    padding-top: 250px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+}
+.center {
+  display: inline-block;
+  width: 60%;
+  height: auto;
+}
+.main {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  padding: 0px 20px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main {
+    width: 500px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.main .sidetab {
+  background-color: #0b5351;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+  width: 30%;
+  max-height: 250px;
+  margin-right: 0;
+}
+@media (max-width: 500px) {
+  .main .sidetab {
+    width: 60%;
+    border-radius: 15px;
+  }
+}
+.main .sidetab h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+.main .sidetab ul {
+  padding-left: 15px;
+  line-height: 2.2;
+  list-style-type: circle;
+}
+.main2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main2 .tab1 {
+  margin-top: 30px;
+  background-color: #4e8098;
+  border-radius: 10px;
+  padding: 20px 20px;
+  color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .main2 .tab1 {
+    width: 95%;
+    margin: 0px auto;
+  }
+}
+.main2 .tab2 {
+  margin-top: 30px;
+  background-color: #00a9a5;
+  border-radius: 10px;
+  padding: 20px 20px;
+  color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .main2 .tab2 {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
 .teamboard {
   width: 680px;
   margin: 0 auto;
@@ -156,17 +226,25 @@ body {
   align-content: space-between;
   justify-content: space-between;
   color: white;
-  font-size: 1rem;
+  font-size: 1.8rem;
   border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .teamboard {
+    width: 480px;
+  }
 }
 .teamboard h4 {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+}
+.teamboard h2 {
+  font-size: 2rem;
 }
 .teamboard .title {
   color: white;
   padding: 30px 0 20px 0;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   border-bottom: 2px solid white;
   text-align: center;
 }
@@ -184,6 +262,16 @@ body {
 }
 .teamboard .containerboard .iteminfo-show {
   display: block;
+}
+.teamboard .containerboard .iteminfo-show .pp {
+  width: 400px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .teamboard .containerboard .iteminfo-show .pp {
+    width: 80%;
+    height: auto;
+  }
 }
 .teamboard .containerboard .members {
   width: 30%;
@@ -203,4 +291,9 @@ footer {
   background-color: lightgray;
   padding: 20px 0 20px 0;
   margin-top: 100px;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 50px;
+  }
 }
