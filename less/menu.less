@@ -94,14 +94,16 @@
     opacity: 0.8;
     overflow: hidden;
     transition: opacity .8s;
-    @media @phone{
-    justify-content: space-evenly; 
-    position: relative;
-    height: 60px; 
-    }
     @media @tablet{
     top: 130px;
     }
+    @media @phone{
+        justify-content: space-evenly; 
+        position: relative;
+        top: 0;
+        height: 60px; 
+        background-color: #092327
+        }
     .belowbarlink {
         margin-right: 100px;
         text-decoration: none;
