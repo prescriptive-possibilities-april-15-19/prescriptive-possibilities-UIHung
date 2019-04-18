@@ -1,19 +1,13 @@
 //scrolling resize for navbar
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (window.innerWidth >= 500 && (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)) {
-//     document.querySelector(".fixedmenu").style.padding = "10px 0px";
-//     document.querySelector(".belowbar-show").style.marginTop = "72px";
-//   } else if (window.innerWidth >= 500){
-//     document.querySelector(".fixedmenu").style.padding = "30px 0px";
-//     document.querySelector(".belowbar-show").style.marginTop = "113px";
-//   }
-//   else{
-//     document.querySelector(".fixedmenu").style.padding = "100px 0px";
-//     document.querySelector(".belowbar-show").style.marginTop = "113px";
-//   }
-// } 
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".fixedmenu").style.opacity = "0.90";
+  } else {
+    document.querySelector(".fixedmenu").style.opacity = "1";
+  }
+} 
 
 class MenuLink {
     constructor(element) {
