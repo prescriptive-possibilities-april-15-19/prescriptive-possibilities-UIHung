@@ -161,8 +161,8 @@ body {
   color: gray;
 }
 #button {
-  border: 1px solid #b1ede2;
-  background-color: darkgray;
+  border: 1px solid #b1ede8;
+  background-color: #092327;
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
 }
@@ -172,16 +172,16 @@ body {
   }
 }
 #button:hover {
-  background-color: lightgray;
+  background-color: #092327;
   border: 2px solid #b1ede2;
   cursor: pointer;
 }
 #button a {
-  color: #092327;
+  color: #b1ede8;
   text-decoration: none;
 }
 #button a:hover {
-  color: #092327;
+  color: darkgray;
 }
 .container {
   width: 800px;
@@ -201,6 +201,11 @@ body {
     margin: 0 auto;
   }
 }
+header h1 {
+  font-size: 4rem;
+  color: #b1ede8;
+  padding-left: 5px;
+}
 .center {
   display: inline-block;
   width: 60%;
@@ -211,7 +216,7 @@ body {
   flex-direction: row nowrap;
   background-color: black;
   border: 4px solid #0b5351;
-  border-radius: 4px;
+  border-radius: 10px;
   justify-content: space-around;
   padding: 10px 20px;
   align-items: center;
@@ -230,9 +235,7 @@ body {
   height: auto;
 }
 .main .sidetab {
-  border: 4px solid #0b5351;
   color: white;
-  border-radius: 5px;
   padding: 20px 15px 20px 15px;
   width: 30%;
   max-height: auto;
@@ -270,10 +273,10 @@ body {
 }
 .main2 .tab1 {
   margin-top: 30px;
-  border: 4px solid #4e8098;
+  border: 5px solid #b1ede8;
   border-radius: 10px;
   padding: 20px 20px;
-  color: whitesmoke;
+  color: #b1ede8;
 }
 @media (max-width: 500px) {
   .main2 {
@@ -286,13 +289,16 @@ body {
   border: 4px solid #00a9a5;
   border-radius: 10px;
   padding: 20px 20px;
-  color: whitesmoke;
+  color: #00a9a5;
 }
 @media (max-width: 500px) {
   .main2 .tab2 {
     width: 95%;
     margin: 10px auto;
   }
+}
+#white {
+  color: whitesmoke;
 }
 .abouttab1 {
   width: 80%;
@@ -301,12 +307,12 @@ body {
 .teamboard {
   width: 680px;
   margin: 0 auto;
-  background-color: #0b5351;
+  border: 5px solid #b1ede8;
   display: flex;
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
-  color: white;
+  color: #b1ede8;
   font-size: 1.8rem;
   border-radius: 25px;
 }
@@ -337,7 +343,7 @@ body {
   color: white;
   padding: 30px 0 20px 0;
   font-size: 2.4rem;
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid #b1ede8;
   text-align: center;
 }
 .teamboard .containerboard {
