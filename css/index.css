@@ -413,6 +413,6 @@ footer {
 @media (max-width: 500px) {
   footer {
     margin-top: 50px;
-    max-width: 100%;
+    max-width: 500px;
   }
 }
