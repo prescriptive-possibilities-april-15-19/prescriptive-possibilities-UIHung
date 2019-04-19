@@ -101,16 +101,16 @@ body {
   padding-right: 50px;
   justify-content: flex-end;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .topbar .fixedmenu .frontend {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
   .topbar .fixedmenu .frontend {
     margin-top: 5px;
     margin-bottom: 5px;
     padding-right: 0px;
-  }
-}
-@media (max-width: 800px) {
-  .topbar .fixedmenu .frontend {
-    padding-right: 20px;
   }
 }
 .topbar .belowbar {
