@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import './variables';
+@import './mixins';
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0; 
+    padding: 0;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: @bgcolor;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+  }
+
+  @import './menu.less';
+
+  .container{
+    width: 800px;
+    padding-top: 170px;
+    margin: 0px auto;
+    @media @tablet{
+        padding-top: 210px;
+        max-width: 600px;
+    }
+    @media @phone {
+      width: 500px;
+      padding-top: 20px;
+      margin: 0 auto;
+      }
+  }
+
+  header h1{
+    font-size: 4rem;
+    color: @highlighter;
+    padding-left: 5px;
+  }
+
+  .center{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+  }
+ 
+  .main{
+    display: flex;
+    flex-direction: row nowrap;
+    background-color: black;
+    border: 4px solid @forestgreen;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 10px 20px;
+    align-items: center;
+    @media @phone{
+      width: 95%;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .viewport{
+      width: 100%;
+      height: auto;
+    }
+   .sidetab{
+    color: white;
+    padding: 20px 15px 20px 15px;
+    width: 30%;
+    max-height: auto;
+    margin-right: 0;
+    @media @phone{
+      width: 60%;
+      border-radius: 15px;
+    }
+    @media @tablet{
+      max-height: 400px;
+    }
+      h2{
+        font-size: 1.8rem;
+        margin-bottom: 0px;
+      }
+      ul{
+        padding-left: 15px;
+        line-height: 2.2;
+        @media @tablet{
+          line-height: 1.5;
+        }
+        list-style-type: circle;
+      }
+    }
+  }
+
+  .main2{
+    .width-100;
+    display:flex;
+    flex-direction: column;
+
+   .tab1{
+    margin-top: 30px;
+    border: 5px solid @highlighter;
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: @highlighter;
+    } 
+
+    @media @phone{
+      width: 95%;
+      margin: 0px auto;
+  }
+
+   .tab2{
+    margin-top: 30px;
+    border: 4px solid @marine;
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: @marine;
+    @media @phone{
+      width: 95%;
+      margin: 10px auto;
+    }
+  }
+  }
+
+  #white{
+    color: whitesmoke;
+  }
+  
+  @import './about.less';
+  @import './footer.less';

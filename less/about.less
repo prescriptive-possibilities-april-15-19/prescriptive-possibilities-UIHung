@@ -1,0 +1,85 @@
+.abouttab1{
+    width: 80%;
+    margin: 0 auto;
+}
+.teamboard{
+    width: 680px;
+    margin: 0 auto;
+    border: 5px solid @highlighter; 
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    color: @highlighter;
+    font-size: 1.8rem;
+    border-radius: 25px;
+    @media @tablet{
+        width: 500px;
+    }
+    @media @phone{
+        width: 465px;
+        font-size: 1.6rem;
+    }
+    h4 {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        @media @phone{
+            font-size: 2rem;
+        }
+    }
+    h2{
+        font-size: 2.0rem;
+    }
+    .title {
+        color: white;
+        padding: 30px 0 20px 0;
+        font-size: 2.4rem;
+        border-bottom: 5px solid @highlighter;
+        text-align: center;
+        }
+    .containerboard{
+        display: flex;
+        .width-100;
+        .meminfo{
+    width: 70%;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    @media @phone{
+        width: 65%;
+    }
+    }
+        .iteminfo{
+         display: none;
+        }
+        .iteminfo-show{
+        display: block;
+        .pp{
+            width: 400px;
+            height: auto;
+            @media @phone {
+                width: 80%;
+                height: auto;
+            }
+            @media @tablet{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+        .members{
+        width: 30%;
+         display: flex;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+        @media @phone{
+            width: 35%;
+            padding: 20px 5px 20px 5px;
+        }
+
+        .memname{
+        margin-bottom: 8px;
+        &:hover { cursor: pointer; color:darkgray}
+        }
+    }
+}
+}
